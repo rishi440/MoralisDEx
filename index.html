@@ -25,9 +25,19 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <button id = "login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign in with Metamask</button>
-            <button id = "logout_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit" style ="display: none">Logout</button>
+            <!--- create a dropdown menu for user to select between chains polygon/eth/bsc and set value of currentChain on click -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Chain
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" onclick="setCurrentChain('polygon')">Polygon</a>
+                    <a class="dropdown-item" href="#" onclick="setCurrentChain('eth')">Ethereum</a>
+                    <a class="dropdown-item" href="#" onclick="setCurrentChain('bsc')">Binance</a>
+                </div>
         </div>
+        <button id = "login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign in with Metamask</button>
+        <button id = "logout_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit" style ="display: none">Logout</button>
       </nav>
     <div class="container">
         <div class = "row">
