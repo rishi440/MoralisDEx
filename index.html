@@ -26,6 +26,7 @@
                 </li>
             </ul>
             <button id = "login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign in with Metamask</button>
+            <button id = "logout_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit" style ="display: none">Logout</button>
         </div>
       </nav>
     <div class="container">
@@ -35,22 +36,25 @@
                 <div id="form">
                     <div class="swapbox">
                         <div class="swapbox_select token_select" id="from_token_select">
-                            Select token
+                          <img class ="token_image" id = "from_token_img">
+                          <span id="from_token_text">Select Token</span>
                         </div>
                         <div class="swapbox_select">
                             <input class="number form-control" placeholder="amount" id="from_amount">
                             
                         </div>
-                    </div>    
+                    </div>  
                     <div class="swapbox">
                         <div class="swapbox_select token_select" id="to_token_select">
-                                Select token
+                          <img class ="token_image" id = "to_token_img">
+                          <span id="to_token_text">Select Token</span>
                         </div>
                         <div class="swapbox_select">
                             <input class="number form-control" placeholder="amount" id="to_amount">                            
                         </div>
                     </div>
-                    <button class="btn btn-large btn-primary btn-block" id="swap_button">Confirm</button>
+                    <div id="gas_estimation"></div>
+                    <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">Confirm</button>
                 </div>
             </div>
         </div>

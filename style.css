@@ -7,6 +7,10 @@ border-radius: 20px;
 box-shadow: 0 0 5px black; 
 }
 
+body{
+background-color: rgba(15, 20, 128, 0.63);
+}
+
 .swapbox_select{
     width: 50%;
     float: left;
@@ -31,6 +35,60 @@ box-shadow: 0 0 5px black;
 
 .token_select{
     padding: 5px 0;
+    cursor: pointer;
+}
+
+.token_list_img{
+    width: 45px;    
+}
+
+.token_row{
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(206, 224, 41, 0.637);
+    cursor: pointer;
+}
+
+/* token row hover */
+.token_row:hover{
+    background-color: rgba(177, 182, 131, 0.637);
+    border: #252028;
+}
+
+.modal-body{
+    height: 400px;
+    overflow-y: scroll;
+
+    /* smoothen edges */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(70, 12, 146, 0.75);
+
+}
+
+/* modal header matches theme of modal body */
+.modal-header{
+    background-color: #252028;
+    color: rgb(192, 132, 21);
+    border-radius: 20px 20px 0px 0px;
+
+    /* text color regular */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(70, 12, 146, 0.75);
+
+}
+
+/* fit dimensions of token_image to swapbox */
+.token_image{
+    width: 25%;
+    height: 25%;
+    padding: 5px; 
+}
+
+/* modal close button hover */
+.close:hover, .close:focus{
+    color: rgb(192, 132, 21);
+    text-decoration: none;
     cursor: pointer;
 }
 
